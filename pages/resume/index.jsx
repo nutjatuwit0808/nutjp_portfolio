@@ -5,7 +5,7 @@ import MyResume from "../../public/images/nutjp_resume_image_thai.png";
 
 function index() {
   return (
-    <div className="w-full h-full p-10">
+    <div className="w-full h-full p-10 flex flex-row justify-center">
       <Image src={MyResume} alt="nutjp resume thai image"></Image>
     </div>
   );

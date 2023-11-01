@@ -1,0 +1,17 @@
+.preview-images {
+    position: absolute;
+    background-color: black;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 20;
+    transition: 0.5s;
+
+}
+.project-detail-wrapper__gallery:hover {
+    .preview-images{
+        transition: 0.25s;
+        transition-timing-function: ease-in-out;
+        opacity: 75%;
+    }
+}

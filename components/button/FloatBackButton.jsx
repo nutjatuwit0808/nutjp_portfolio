@@ -7,7 +7,7 @@ function FloatBackButton() {
   return (
     <div
       onClick={backHomeHandler}
-      className="w-16 h-16 rounded-full bg-[#176B87] absolute bottom-4 right-4 z-10 flex justify-center items-center cursor-pointer"
+      className="w-16 h-16 rounded-full bg-[#176B87] fixed bottom-4 right-4 z-50 flex justify-center items-center cursor-pointer hover:-translate-y-2 transition"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"

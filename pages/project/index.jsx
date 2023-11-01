@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../../app/globals.css";
+import "./project.css";
 
 import image1 from "../../public/images/gallery_1.png";
 import image2 from "../../public/images/r_image_1.png";
@@ -10,39 +11,167 @@ import FloatBackButton from "@/components/button/FloatBackButton";
 
 function Project() {
   let [openUserHotel, setOpenUserHotel] = useState(false);
-  const images = [image1, image2, image3];
+  let [openAdminHotel, setOpenAdminHotel] = useState(false);
+
+  const userHotelImages = [image1, image2, image3];
+  const adminHotelImages = [image1, image2, image3];
 
   const onCloseUserHotelHandler = () => {
     setOpenUserHotel(false);
   };
 
+  const onCloseAdminHotelHandler = () => {
+    setOpenAdminHotel(false);
+  };
+
   return (
     <div className="project-container">
-      <FloatBackButton/>
-      <div className="user-hotel-wrapper">
-        <div className="user-hotel-wrapper__content">
-          <h1 className="text-2xl font-bold border-b-2 border-blue-300 mb-2">Hotel Management</h1>
-          <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ipsa hic eligendi sit, officia doloribus minus fugit nemo recusandae provident.</h3>
-          <button
-            className="bg-blue-500 text-white font-bold w-52 h-10"
-            onClick={() => setOpenUserHotel(true)}
-          >
-            แสดงรูป
-          </button>
+      <FloatBackButton />
+      <div className="project-detail-item-wrapper">
+        <div className="project-title text-3xl font-bold underline underline-offset-1">
+          <h1>Hotel Management</h1>
         </div>
-        <div className="user-hotel-wrapper__gallery">
-          <Image
-            src={image1}
-            alt="user hotel"
-            style={{ width: "100%", height: "100%" }}
-            className="object-contain"
-          />
-          <GallerySlide
-            images={images}
-            isOpen={openUserHotel}
-            onClose={onCloseUserHotelHandler}
-          />
+        {/* First Item */}
+        <div className="project-detail-wrapper">
+          <div className="project-detail-wrapper__content">
+            <h1 className="text-2xl font-bold border-b-2 border-blue-300 mb-2">
+              User Side
+            </h1>
+            <div className="tag-wrapper mb-2">
+              <span className="tag-blue">Amplify</span>
+              <span className="tag-red">Lampda</span>
+              <span className="tag-dark">Bootstrap</span>
+              <span className="tag-green">Nodejs</span>
+              <span className="tag-indigo">Reactjs</span>
+            </div>
+            <ul className="list-disc list-inside pl-8">
+              <li>
+                Room booking function and check availability during the desired
+                time period.
+              </li>
+              <li>Various information about the hotel.</li>
+              <li>Gallery for displaying pictures of the hotel.</li>
+              <li>Web responsive.</li>
+              <li>Development with <a className="underline decoration-sky-500">Reactjs</a>.</li>
+              <li>
+                Use <a className="underline decoration-sky-500">bootstrap</a> as
+                css framework.
+              </li>
+              <li>
+                Deploy on{" "}
+                <a className="underline decoration-sky-500">AWS Amplify</a>.
+              </li>
+              <li>
+                Backend is{" "}
+                <a className="underline decoration-sky-500">Nodejs</a>,{" "}
+                <a className="underline decoration-sky-500">Nodejs</a> deployed
+                on <a className="underline decoration-sky-500">AWS Lampda</a>.
+              </li>
+            </ul>
+          </div>
+          <div className="project-detail-wrapper__gallery relative z-10 cursor-pointer max-w-xl">
+            <div
+              className="preview-images flex justify-center items-center"
+              onClick={() => setOpenUserHotel(true)}
+            >
+              <button className="text-white border-2 border-white rounded-lg p-2">
+                Preview
+              </button>
+            </div>
+            <Image
+              src={image1}
+              alt="user hotel"
+              style={{ width: "100%", height: "100%" }}
+              className="object-cover"
+            />
+
+            <GallerySlide
+              images={userHotelImages}
+              isOpen={openUserHotel}
+              onClose={onCloseUserHotelHandler}
+            />
+          </div>
         </div>
+        {/* First Item */}
+        {/* Second Item */}
+        <div className="project-detail-wrapper">
+          <div className="project-detail-wrapper__content">
+            <h1 className="text-2xl font-bold border-b-2 border-blue-300 mb-2">
+              Admin Side
+            </h1>
+            <div className="tag-wrapper mb-2">
+              <span className="tag-blue">Amplify</span>
+              <span className="tag-red">Lampda</span>
+              <span className="tag-purple">S3</span>
+              <span className="tag-dark">ReactMUI</span>
+              <span className="tag-green">Nodejs</span>
+              <span className="tag-indigo">Reactjs</span>
+            </div>
+            <ul className="list-disc list-inside pl-8">
+              <li>
+                There is a room timeline function for Admin to change
+                reservations. Admin can close that room if you need cleaning or
+                maintenance.
+              </li>
+              <li>
+                Payment approval function, if the item has a slip uploaded from
+                the user side. Admin can check the correctness and approve it.
+              </li>
+              <li>
+                Generate payment URL function for gererate the url to select a
+                room for the user. When the user opens the url, it will be the
+                payment screen.
+              </li>
+              <li>Admin&apos;s role management function.</li>
+              <li>Generate voucher function to use as a discount for users</li>
+              <li>Function to change prices and room information.</li>
+              <li>
+                Holiday calendar management function You can set holidays for
+                the system. And adjust the cost of bookings separated by room
+                type.
+              </li>
+              <li>
+                Gallery management function on the user side by uploading images
+                to be stored in <a className="underline decoration-sky-500">AWS S3</a>.
+              </li>
+              <li>Development with <a className="underline decoration-sky-500">Reactjs</a>.</li>
+              <li>Use <a className="underline decoration-sky-500">React MUI</a> as css framework.</li>
+              <li>
+                Deploy on{" "}
+                <a className="underline decoration-sky-500">AWS Amplify</a>.
+              </li>
+              <li>
+                Backend is{" "}
+                <a className="underline decoration-sky-500">Nodejs</a>,{" "}
+                <a className="underline decoration-sky-500">Nodejs</a> deployed
+                on <a className="underline decoration-sky-500">AWS Lampda</a>.
+              </li>
+            </ul>
+          </div>
+          <div className="project-detail-wrapper__gallery relative z-10 cursor-pointer max-w-xl">
+            <div
+              className="preview-images flex justify-center items-center"
+              onClick={() => setOpenAdminHotel(true)}
+            >
+              <button className="text-white border-2 border-white rounded-lg p-2">
+                Preview
+              </button>
+            </div>
+            <Image
+              src={image1}
+              alt="user hotel"
+              style={{ width: "100%", height: "100%" }}
+              className="object-cover"
+            />
+
+            <GallerySlide
+              images={adminHotelImages}
+              isOpen={openAdminHotel}
+              onClose={onCloseAdminHotelHandler}
+            />
+          </div>
+        </div>
+        {/* Second Item */}
       </div>
     </div>
   );

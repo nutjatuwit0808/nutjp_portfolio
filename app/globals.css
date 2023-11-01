@@ -26,10 +26,66 @@
   }
 
   .project-container {
-    @apply w-screen h-screen flex flex-col items-center;
+    @apply w-screen h-screen flex flex-col items-center bg-white;
   }
-  .user-hotel-wrapper {
-    @apply w-[70vw] h-full flex flex-row justify-center p-24;
+  .project-detail-item-wrapper {
+    @apply flex flex-col items-center my-4 py-6 px-4 bg-white rounded-lg;
+  }
+  .project-detail-wrapper {
+    @apply w-[70vw] h-full grid grid-cols-2 max-[1200px]:grid-cols-1 my-4 py-4 place-items-center rounded-lg gap-2 border-l-8 border-l-indigo-500;
+  }
+  .project-detail-wrapper__content {
+    @apply px-6;
+  }
+  .project-detail-wrapper__gallery {
+    @apply flex flex-row justify-center items-center
+  }
+  .tag-wrapper {
+    @apply grid gap-2 grid-cols-8 
+           max-[1600px]:grid-cols-6 
+           max-[1300px]:grid-cols-5 
+           max-[1200px]:grid-cols-8 
+           max-[850px]:grid-cols-6 
+           max-[750px]:grid-cols-5 
+           max-[650px]:grid-cols-4 
+           max-[550px]:grid-cols-3 
+           max-[450px]:grid-cols-2
+  }
+  .tag-blue {
+    @apply bg-blue-100 text-blue-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full dark:bg-blue-900 dark:text-blue-300 text-center;
+  }
+  .tag-dark {
+    @apply bg-gray-100 text-gray-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full dark:bg-gray-700 dark:text-gray-300 text-center;
+  }
+  .tag-red {
+    @apply bg-red-100 text-red-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full dark:bg-red-900 dark:text-red-300 text-center;
+  }
+  .tag-green {
+    @apply bg-green-100 text-green-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full dark:bg-green-900 dark:text-green-300 text-center;
+  }
+  .tag-yellow {
+    @apply bg-yellow-100 text-yellow-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full dark:bg-yellow-900 dark:text-yellow-300 text-center;
+  }
+  .tag-indigo {
+    @apply bg-indigo-100 text-indigo-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full dark:bg-indigo-900 dark:text-indigo-300 text-center;
+  }
+  .tag-purple {
+    @apply bg-purple-100 text-purple-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full dark:bg-purple-900 dark:text-purple-300 text-center;
+  }
+  .tag-pink {
+    @apply bg-pink-100 text-pink-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full dark:bg-pink-900 dark:text-pink-300 text-center;
+  }
+
+  .contact-container {
+    @apply bg-white p-4 bottom-2 right-6 z-20 rounded-lg drop-shadow-lg  cursor-pointer delay-100 border-l-8 border-[#04364A] fixed animate-bounce
+             hover:animate-none 
+             max-[1235px]:relative max-[1235px]:animate-none max-[1235px]:bottom-0 max-[1235px]:right-0 max-[1235px]:my-4;
+  }
+  .contact-item {
+    @apply flex flex-row justify-start gap-2 my-2;
+  }
+  .contact-item__text {
+    @apply underline underline-offset-2
   }
 }
 
