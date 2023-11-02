@@ -2,19 +2,43 @@ import React, { useState } from "react";
 import "../../app/globals.css";
 import "./project.css";
 
-import image1 from "../../public/images/gallery_1.png";
-import image2 from "../../public/images/r_image_1.png";
-import image3 from "../../public/images/r_image_2.png";
 import GallerySlide from "@/components/image_slide/GallerySlide";
 import Image from "next/image";
 import FloatBackButton from "@/components/button/FloatBackButton";
+
+/*USER SIDE*/
+import user_img1 from "../../public/images/projects/hotel_management/user1.png";
+import user_img2 from "../../public/images/projects/hotel_management/user2.png";
+import user_img3 from "../../public/images/projects/hotel_management/user3.png";
+import user_img4 from "../../public/images/projects/hotel_management/user4.png";
+import user_img5 from "../../public/images/projects/hotel_management/user5.png";
+import user_img6 from "../../public/images/projects/hotel_management/user6.png";
+/*ADMIN SIDE*/
+import admin_img1 from "../../public/images/projects/hotel_management/admin1.png";
+import admin_img2 from "../../public/images/projects/hotel_management/admin2.png";
+import admin_img3 from "../../public/images/projects/hotel_management/admin3.png";
+import admin_img4 from "../../public/images/projects/hotel_management/admin4.png";
+import admin_img5 from "../../public/images/projects/hotel_management/admin5.png";
 
 function Project() {
   let [openUserHotel, setOpenUserHotel] = useState(false);
   let [openAdminHotel, setOpenAdminHotel] = useState(false);
 
-  const userHotelImages = [image1, image2, image3];
-  const adminHotelImages = [image1, image2, image3];
+  const userHotelImages = [
+    user_img1,
+    user_img2,
+    user_img3,
+    user_img4,
+    user_img5,
+    user_img6,
+  ];
+  const adminHotelImages = [
+    admin_img1,
+    admin_img5,
+    admin_img2,
+    admin_img3,
+    admin_img4,
+  ];
 
   const onCloseUserHotelHandler = () => {
     setOpenUserHotel(false);
@@ -52,7 +76,11 @@ function Project() {
               <li>Various information about the hotel.</li>
               <li>Gallery for displaying pictures of the hotel.</li>
               <li>Web responsive.</li>
-              <li>Development with <a className="underline decoration-sky-500">Reactjs</a>.</li>
+              <li>Send payment confirmation file via email to user.</li>
+              <li>
+                Development with{" "}
+                <a className="underline decoration-sky-500">Reactjs</a>.
+              </li>
               <li>
                 Use <a className="underline decoration-sky-500">bootstrap</a> as
                 css framework.
@@ -79,7 +107,7 @@ function Project() {
               </button>
             </div>
             <Image
-              src={image1}
+              src={user_img1}
               alt="user hotel"
               style={{ width: "100%", height: "100%" }}
               className="object-cover"
@@ -132,10 +160,17 @@ function Project() {
               </li>
               <li>
                 Gallery management function on the user side by uploading images
-                to be stored in <a className="underline decoration-sky-500">AWS S3</a>.
+                to be stored in{" "}
+                <a className="underline decoration-sky-500">AWS S3</a>.
               </li>
-              <li>Development with <a className="underline decoration-sky-500">Reactjs</a>.</li>
-              <li>Use <a className="underline decoration-sky-500">React MUI</a> as css framework.</li>
+              <li>
+                Development with{" "}
+                <a className="underline decoration-sky-500">Reactjs</a>.
+              </li>
+              <li>
+                Use <a className="underline decoration-sky-500">React MUI</a> as
+                css framework.
+              </li>
               <li>
                 Deploy on{" "}
                 <a className="underline decoration-sky-500">AWS Amplify</a>.
@@ -158,7 +193,7 @@ function Project() {
               </button>
             </div>
             <Image
-              src={image1}
+              src={admin_img1}
               alt="user hotel"
               style={{ width: "100%", height: "100%" }}
               className="object-cover"
