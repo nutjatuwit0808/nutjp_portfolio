@@ -22,7 +22,7 @@
 
 @layer components {
   .item-nav {
-    @apply text-lg text-[#DAFFFB] font-bold cursor-pointer mr-5 border-b-2 border-white;
+    @apply text-lg text-[#DAFFFB] font-bold cursor-pointer mr-5 border-2 border-white p-2 rounded-lg;
   }
 
   .project-container {

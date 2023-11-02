@@ -52,7 +52,7 @@ function Project() {
     <div className="project-container">
       <FloatBackButton />
       <div className="project-detail-item-wrapper">
-        <div className="project-title text-3xl font-bold underline underline-offset-1">
+        <div className="project-title text-3xl font-bold  underline decoration-sky-500">
           <h1>Hotel Management</h1>
         </div>
         {/* First Item */}
