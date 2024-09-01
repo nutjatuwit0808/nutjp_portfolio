@@ -52,7 +52,8 @@ export default function Home() {
             Jatuwit Pitukdansakul
           </h1>
           <p className="mt-1 font-normal text-[#04364A]">
-            I am a Full Stack Developer, currently working at Avalant.
+            My nickname is Nut. I am a Full Stack Developer, currently working
+            at Avalant.
           </p>
         </header>
         <menu className="grid md:grid-cols-2 min-[320px]:grid-cols-1 gap-3">
@@ -63,7 +64,7 @@ export default function Home() {
                 Resume(Eng)
               </a>
               <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                last updated on 2023/10/30.
+                last updated on 2024/09/01.
               </p>
               <div className="flex flex-row justify-end">
                 <svg
@@ -72,7 +73,7 @@ export default function Home() {
                   viewBox="0 0 24 24"
                   strokeWidth="1.5"
                   stroke="currentColor"
-                  className="w-6 h-6"
+                  className="w-6 h-6 dark:text-white"
                 >
                   <path
                     strokeLinecap="round"
@@ -91,7 +92,7 @@ export default function Home() {
                 Resume(Thai)
               </a>
               <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                last updated on 2023/10/30.
+                last updated on 2024/09/01.
               </p>
               <div className="flex flex-row justify-end">
                 <svg
@@ -100,7 +101,7 @@ export default function Home() {
                   viewBox="0 0 24 24"
                   strokeWidth="1.5"
                   stroke="currentColor"
-                  className="w-6 h-6"
+                  className="w-6 h-6 dark:text-white"
                 >
                   <path
                     strokeLinecap="round"
@@ -128,7 +129,7 @@ export default function Home() {
                   viewBox="0 0 24 24"
                   strokeWidth="1.5"
                   stroke="currentColor"
-                  className="w-6 h-6"
+                  className="w-6 h-6 dark:text-white"
                 >
                   <path
                     strokeLinecap="round"
@@ -156,7 +157,7 @@ export default function Home() {
                   viewBox="0 0 24 24"
                   strokeWidth="1.5"
                   stroke="currentColor"
-                  className="w-6 h-6"
+                  className="w-6 h-6 dark:text-white"
                 >
                   <path
                     strokeLinecap="round"
@@ -184,7 +185,7 @@ export default function Home() {
                   viewBox="0 0 24 24"
                   strokeWidth="1.5"
                   stroke="currentColor"
-                  className="w-6 h-6"
+                  className="w-6 h-6 dark:text-white"
                 >
                   <path
                     strokeLinecap="round"
@@ -212,7 +213,7 @@ export default function Home() {
                   viewBox="0 0 24 24"
                   strokeWidth="1.5"
                   stroke="currentColor"
-                  className="w-6 h-6"
+                  className="w-6 h-6 dark:text-white"
                 >
                   <path
                     strokeLinecap="round"
