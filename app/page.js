@@ -64,7 +64,7 @@ export default function Home() {
                 Resume(Eng)
               </a>
               <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                last updated on 2024/09/01.
+                last updated on 2024/09/08.
               </p>
               <div className="flex flex-row justify-end">
                 <svg
@@ -92,7 +92,7 @@ export default function Home() {
                 Resume(Thai)
               </a>
               <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                last updated on 2024/09/01.
+                last updated on 2024/09/08.
               </p>
               <div className="flex flex-row justify-end">
                 <svg

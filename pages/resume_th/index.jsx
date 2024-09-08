@@ -1,7 +1,7 @@
 import React from "react";
 import "../../app/globals.css";
 import Image from "next/image";
-import MyResume from "../../public/images/nutjp_resume_image_thai.png";
+import MyResume from "../../public/images/nutjatuwit_resume_th_2024_page-0001.jpg";
 
 function index() {
   return (
