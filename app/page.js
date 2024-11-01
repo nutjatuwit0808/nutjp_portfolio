@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import myImage from "../public/images/my_photo.jpg";
-import Navbar from "@/components/layouts/navbar/Navbar";
+import Leftbar from "@/components/layouts/menu-bar/Leftbar";
 import {
   GITHUB,
   LINKEDIN,
@@ -37,7 +37,7 @@ export default function Home() {
   };
 
   return (
-    <div className="content-wrapper min-h-screen bg-[#DAFFFB]">
+    <div className="content-wrapper min-h-screen bg-[#DAFFFB] flex-1">
       {/* <Navbar /> */}
       <div className="color-bar h-36 bg-[#176B87]"></div>
       <main className="flex flex-col items-center justify-between px-24 pb-4 -mt-20 relative">

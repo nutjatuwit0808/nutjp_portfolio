@@ -1,3 +1,4 @@
+"use client"
 import React, { useState } from "react";
 import "../../app/globals.css";
 import "./project.css";
@@ -50,7 +51,6 @@ function Project() {
 
   return (
     <div className="project-container">
-      <FloatBackButton />
       <div className="project-detail-item-wrapper">
         <div className="project-title text-3xl font-bold  underline decoration-sky-500">
           <h1>Hotel Management</h1>
@@ -61,7 +61,7 @@ function Project() {
             <h1 className="text-2xl font-bold border-b-2 border-blue-300 mb-2">
               User Side
             </h1>
-            <div className="tag-wrapper mb-2">
+            <div className="tag-wrapper">
               <span className="tag-blue">Amplify</span>
               <span className="tag-red">Lampda</span>
               <span className="tag-dark">Bootstrap</span>
@@ -127,7 +127,7 @@ function Project() {
             <h1 className="text-2xl font-bold border-b-2 border-blue-300 mb-2">
               Admin Side
             </h1>
-            <div className="tag-wrapper mb-2">
+            <div className="tag-wrapper">
               <span className="tag-blue">Amplify</span>
               <span className="tag-red">Lampda</span>
               <span className="tag-purple">S3</span>

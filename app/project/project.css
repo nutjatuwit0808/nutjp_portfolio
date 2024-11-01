@@ -1,3 +1,6 @@
+.project-container {
+    @apply w-full h-screen overflow-y-scroll overflow-x-hidden;
+}
 .preview-images {
     position: absolute;
     background-color: black;
@@ -7,6 +10,9 @@
     z-index: 20;
     transition: 0.5s;
 
+}
+.tag-wrapper {
+    @apply flex flex-wrap gap-1 mb-2;
 }
 .project-detail-wrapper__gallery:hover {
     .preview-images{

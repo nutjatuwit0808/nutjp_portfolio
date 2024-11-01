@@ -1,0 +1,19 @@
+.singleImgContainer {
+  @apply w-full h-full p-10 overflow-y-auto ;
+}
+
+.singleImgWrapper {
+  @apply flex flex-row justify-center relative cursor-pointer;
+}
+
+.singleImgWrapper img {
+  @apply object-contain;
+}
+
+.singleImgWrapper:hover .textShowClickToZoom {
+  @apply block;
+}
+
+.textShowClickToZoom {
+  @apply hidden absolute top-12 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-gray-200 p-3 rounded-md z-10 text-black font-bold text-base sm:text-sm md:text-base lg:text-lg;
+}
