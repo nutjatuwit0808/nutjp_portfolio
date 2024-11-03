@@ -1,5 +1,5 @@
 .singleImgContainer {
-  @apply w-full h-full p-10 overflow-y-auto ;
+  @apply w-full h-full p-10 overflow-y-auto bg-white ;
 }
 
 .singleImgWrapper {

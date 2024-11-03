@@ -1,0 +1,9 @@
+.linkItem {
+  @apply flex justify-center items-center w-full h-24;
+}
+.linkActive {
+  @apply bg-white text-[#133E87];
+}
+.linkNonActive {
+  @apply text-white bg-[#133E87];
+}

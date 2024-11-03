@@ -1,0 +1,40 @@
+.homeContainer {
+  @apply h-full bg-white flex-1 p-10 overflow-y-auto;
+
+  .homeCardWrapper {
+    @apply flex flex-wrap gap-6;
+
+    .homeCard {
+      @apply flex-col justify-center items-center flex-1 basis-[400px] min-h-64 border border-[#F3F3E0] bg-[#F3F3E0] rounded-lg shadow-sm px-6;
+
+      .techTitleWrapper {
+        @apply text-center text-lg font-semibold py-2 border-b border-[#133E87] text-[#133E87];
+      }
+
+      .techContentWrapper {
+        @apply flex flex-wrap justify-evenly lg:justify-start gap-6 p-4;
+
+        .tectItem {
+          @apply basis-5 p-4 border border-[#133E87] bg-[#CBDCEB] rounded-full relative;
+
+          .popupContent {
+            @apply hidden absolute top-1/2 left-full p-2;
+
+            &::after {
+              content: "";
+              @apply absolute left-0 top-2 w-0 h-0 border-8 border-transparent;
+              border-right-color:#CBDCEB;
+              transform: translate(-100%, -50%);
+            }
+          }
+        }
+
+        .tectItem:hover {
+          .popupContent {
+            @apply flex bg-[#CBDCEB] text-[#133E87] z-50 rounded-tr-[12px] rounded-br-[12px] rounded-bl-[12px] text-sm;
+          }
+        }
+      }
+    }
+  }
+}

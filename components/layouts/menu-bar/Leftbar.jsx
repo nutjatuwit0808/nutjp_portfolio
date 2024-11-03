@@ -1,41 +1,111 @@
+"use client";
 import {
   RESUME_ENG,
   RESUME_TH,
   TRANSCRIPT,
-  GITHUB,
   PROJECT_DEMO,
+  JOB,
+  EDUCATION,
 } from "@/constants/LinkURL";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
-
+import React, { useEffect } from "react";
+import styles from "./MenuBar.module.css";
 import myImage from "../../../public/images/my_photo.jpg";
+import { usePathname } from "next/navigation";
 
 function Leftbar() {
+  const path = usePathname();
+
+  useEffect(() => {
+    console.log("path => ", path);
+  }, [path]);
+
   return (
-    <nav className="flex flex-col items-center justify-start gap-8 h-screen w-[280px]">
-      <div className="h-[30vh] w-full flex flex-col justify-center items-center p-4 bg-slate-100">
+    <nav className="flex flex-col items-center justify-start h-screen w-[280px] bg-[#133E87]">
+      <div className="h-[30vh] w-full flex flex-col justify-center items-center p-4 bg-[#CBDCEB] text-[#133E87]">
         <Image
-          className="object-cover rounded-full mb-3 border-2 border-white shadow-white shadow-2xl"
+          className="object-cover rounded-full mb-3 border-2 border-white"
           src={myImage}
           style={{ width: "80px", height: "80px" }}
           alt="nutjp image"
         />
         <p>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I am Jatuwit Pitukdansakul. My nickname is Nut. I am a Developer, currently working at
-          Avalant.
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I am Jatuwit Pitukdansakul. My nickname
+          is Nut. I am a Developer, currently working at Avalant.
         </p>
       </div>
-      <Link href={RESUME_TH}>Resume TH</Link>
-      <Link href={RESUME_ENG}>Resume ENG</Link>
-      <Link href={TRANSCRIPT}>Transcript</Link>
-      <Link href={PROJECT_DEMO}>Project Demo</Link>
-      <Link href={""}>Tech Stack</Link>
-      <Link href={""}>Work Timeline</Link>
-      <Link href={""}>Graduted Timeline</Link>
-      <Link href={""}>Certificate</Link>
-      <Link href={""}>About Me</Link>
-      {/* <Link href={""}>Knowledge</Link> */}
+      <Link
+        className={
+          styles.linkItem +
+          " " +
+          (path === "/" ? styles.linkActive : styles.linkNonActive)
+        }
+        href={"/"}
+      >
+        Skills
+      </Link>
+      <Link
+        className={
+          styles.linkItem +
+          " " +
+          (path === JOB ? styles.linkActive : styles.linkNonActive)
+        }
+        href={JOB}
+      >
+        Job Experience
+      </Link>
+      <Link
+        className={
+          styles.linkItem +
+          " " +
+          (path === EDUCATION ? styles.linkActive : styles.linkNonActive)
+        }
+        href={EDUCATION}
+      >
+        Education
+      </Link>
+      {/* <Link href={""}>Certificate</Link> */}
+      <Link
+        className={
+          styles.linkItem +
+          " " +
+          (path === RESUME_TH ? styles.linkActive : styles.linkNonActive)
+        }
+        href={RESUME_TH}
+      >
+        Resume TH
+      </Link>
+      <Link
+        className={
+          styles.linkItem +
+          " " +
+          (path === RESUME_ENG ? styles.linkActive : styles.linkNonActive)
+        }
+        href={RESUME_ENG}
+      >
+        Resume ENG
+      </Link>
+      <Link
+        className={
+          styles.linkItem +
+          " " +
+          (path === TRANSCRIPT ? styles.linkActive : styles.linkNonActive)
+        }
+        href={TRANSCRIPT}
+      >
+        Transcript
+      </Link>
+      <Link
+        className={
+          styles.linkItem +
+          " " +
+          (path === PROJECT_DEMO ? styles.linkActive : styles.linkNonActive)
+        }
+        href={PROJECT_DEMO}
+      >
+        Project Demo
+      </Link>
     </nav>
   );
 }
