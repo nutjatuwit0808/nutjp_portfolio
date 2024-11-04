@@ -109,6 +109,7 @@ function Project() {
               alt="user hotel"
               style={{ width: "100%", height: "100%" }}
               className="object-cover"
+              unoptimized
             />
 
             <GallerySlide
@@ -195,6 +196,7 @@ function Project() {
               alt="user hotel"
               style={{ width: "100%", height: "100%" }}
               className="object-cover"
+              unoptimized
             />
 
             <GallerySlide

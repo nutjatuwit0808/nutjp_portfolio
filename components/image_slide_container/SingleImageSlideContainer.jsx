@@ -19,7 +19,7 @@ function SingleImageSlideContainer({
           isOpen={isOpen}
           onClose={onClose}
         />
-        <Image src={image} alt={titleImg}></Image>
+        <Image src={image} alt={titleImg} unoptimized/>
       </div>
     </div>
   );

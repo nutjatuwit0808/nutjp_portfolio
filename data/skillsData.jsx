@@ -1,3 +1,4 @@
+"use client"
 import { AiOutlineJavaScript } from "react-icons/ai";
 import { BiLogoTypescript } from "react-icons/bi";
 import {

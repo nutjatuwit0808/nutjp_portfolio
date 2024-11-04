@@ -29,8 +29,8 @@ function TimelineItem({ moment, company, position, jobDescription, isEven }) {
         <div className="text-lg font-black">{company}</div>
         <div className="text-sm text-[#608BC1]">{position}</div>
         <ul className="text-start list-disc">
-          {jobDescription.map((job) => {
-            return <li>{job}</li>;
+          {jobDescription.map((job, index) => {
+            return <li key={index}>{job}</li>;
           })}
         </ul>
       </div>

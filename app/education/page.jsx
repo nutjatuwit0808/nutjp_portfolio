@@ -1,3 +1,4 @@
+"use client"
 import React from "react";
 import EducatoinTimelineData from "@/data/educationTimelineData.json";
 import TimelineItem from "@/components/timeline/TimelineItem";

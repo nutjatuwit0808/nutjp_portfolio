@@ -1,3 +1,4 @@
+"use client"
 import TimelineItem from "@/components/timeline/TimelineItem";
 import React from "react";
 import JobTimelineData from "@/data/jobTimelineData.json"

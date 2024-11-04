@@ -23,7 +23,7 @@
             &::after {
               content: "";
               @apply absolute left-0 top-2 w-0 h-0 border-8 border-transparent;
-              border-right-color:#CBDCEB;
+              border-right-color: #cbdceb;
               transform: translate(-100%, -50%);
             }
           }

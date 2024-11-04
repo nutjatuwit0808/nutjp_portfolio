@@ -29,6 +29,7 @@ function Leftbar() {
           src={myImage}
           style={{ width: "80px", height: "80px" }}
           alt="nutjp image"
+          unoptimized
         />
         <p>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I’m Jatuwit Pitukdansakul, also known as

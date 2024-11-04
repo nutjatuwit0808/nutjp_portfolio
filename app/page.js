@@ -1,6 +1,6 @@
 "use client";
-import React, { useState } from "react";
-import styles from "./Home.module.css";
+import React from "react";
+import styles from "./Home.module.scss";
 import { TechGroupItems } from "@/data/skillsData";
 
 export default function Home() {
