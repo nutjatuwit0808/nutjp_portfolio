@@ -17,10 +17,6 @@ import { usePathname } from "next/navigation";
 function Leftbar() {
   const path = usePathname();
 
-  useEffect(() => {
-    console.log("path => ", path);
-  }, [path]);
-
   return (
     <nav className="flex flex-col items-center justify-start h-screen w-[280px] bg-[#133E87]">
       <div className="h-[30vh] w-full flex flex-col justify-center items-center p-4 bg-[#CBDCEB] text-[#133E87]">

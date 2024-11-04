@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import MyResume from "../../public/images/nutjatuwit_resume_en_2024_page-0001.jpg";
+import MyResume from "../../public/images/resume_jatuwit_20241104_eng.png";
 import SingleImageSlideContainer from "@/components/image_slide_container/SingleImageSlideContainer";
 
 function ResumeEng() {
