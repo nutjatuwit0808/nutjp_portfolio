@@ -1,11 +1,9 @@
 "use client"
 import React, { useState } from "react";
-import "../../app/globals.css";
 import "./project.css";
 
 import GallerySlide from "@/components/image_slide/GallerySlide";
 import Image from "next/image";
-import FloatBackButton from "@/components/button/FloatBackButton";
 
 /*USER SIDE*/
 import user_img1 from "../../public/images/projects/hotel_management/user1.png";
@@ -52,13 +50,13 @@ function Project() {
   return (
     <div className="project-container">
       <div className="project-detail-item-wrapper">
-        <div className="project-title text-3xl font-bold  underline decoration-sky-500">
+        <div className="project-title text-3xl font-bold  underline decoration-sky-500 text-[#133E87]">
           <h1>Hotel Management</h1>
         </div>
         {/* First Item */}
         <div className="project-detail-wrapper">
           <div className="project-detail-wrapper__content">
-            <h1 className="text-2xl font-bold border-b-2 border-blue-300 mb-2">
+            <h1 className="text-2xl font-bold mb-2">
               User Side
             </h1>
             <div className="tag-wrapper">

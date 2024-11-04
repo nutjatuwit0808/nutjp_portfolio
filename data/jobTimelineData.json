@@ -1,0 +1,31 @@
+[
+  {
+    "moment": "2019-now",
+    "company": "Avalant.Co.,ltd",
+    "position": "Full stack developer",
+    "jobDescription": [
+      "Provide advice and find solutions to solve problems for developers within the team",
+      "Develop application following requirement specification",
+      "Design the database according to the specifications",
+      "Analyze problems and solve problems in the application",
+      "Fix issues and improve code performance",
+      "Enhance new feature"
+    ]
+  },
+  {
+    "moment": "2018-2019",
+    "company": "Godygo.Co.,ltd",
+    "position": "Java developer & Android developer",
+    "jobDescription": [
+      "Responsible for the back-end of the Godygo appication and implemented with the Android application"
+    ]
+  },
+  {
+    "moment": "2017-2018",
+    "company": "Open source technology.Co.,ltd",
+    "position": "Java developer(intern)",
+    "jobDescription": [
+      "Received a job assignment to make a report summary system(iReport) for each department, which will pull data from the HospitalOS system database using Java, JSP"
+    ]
+  }
+]

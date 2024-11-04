@@ -25,14 +25,14 @@ function Leftbar() {
     <nav className="flex flex-col items-center justify-start h-screen w-[280px] bg-[#133E87]">
       <div className="h-[30vh] w-full flex flex-col justify-center items-center p-4 bg-[#CBDCEB] text-[#133E87]">
         <Image
-          className="object-cover rounded-full mb-3 border-2 border-white"
+          className="object-cover rounded-full mb-3 border-2 border-white shadow-white shadow-2xl"
           src={myImage}
           style={{ width: "80px", height: "80px" }}
           alt="nutjp image"
         />
         <p>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I am Jatuwit Pitukdansakul. My nickname
-          is Nut. I am a Developer, currently working at Avalant.
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I’m Jatuwit Pitukdansakul, also known as
+          Nut. I’m a developer currently working at Avalant.
         </p>
       </div>
       <Link

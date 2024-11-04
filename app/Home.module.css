@@ -15,7 +15,7 @@
         @apply flex flex-wrap justify-evenly lg:justify-start gap-6 p-4;
 
         .tectItem {
-          @apply basis-5 p-4 border border-[#133E87] bg-[#CBDCEB] rounded-full relative;
+          @apply basis-5 p-4 border border-[#133E87] bg-[#CBDCEB] rounded-full relative cursor-pointer;
 
           .popupContent {
             @apply hidden absolute top-1/2 left-full p-2;
@@ -31,7 +31,7 @@
 
         .tectItem:hover {
           .popupContent {
-            @apply flex bg-[#CBDCEB] text-[#133E87] z-50 rounded-tr-[12px] rounded-br-[12px] rounded-bl-[12px] text-sm;
+            @apply flex bg-[#CBDCEB] text-[#133E87] z-50 rounded-tr-[12px] rounded-br-[12px] rounded-bl-[12px] text-sm px-6;
           }
         }
       }
